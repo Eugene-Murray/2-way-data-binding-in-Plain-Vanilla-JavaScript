@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2 Way Data Binding</title>
+</head>
+
+<body>
+<b>2 way binding via class lookup:</b><br />
+
+First Name: <input class="name" type="text" > <br />
+First Name Value: [<label class="name" ></label>] <br />
+Second Name: <input class="age" type="text"> <br />
+Second Name Value: [<label  class="age"></label>] <br />
+
+
+<hr />
+<b>2 way binding via Data-Bind:</b><br />
+
+First Name: <input type="text" data-bind="name"> <br />
+First Name Value: [<label data-bind="name"></label>]<br />
+Second Name: <input type="text" data-bind="goo"> <br />
+Second Name Value: [<label data-bind="goo"></label>] <br />
+
+
+
+<script src="indexViewModel.js"></script>
+</body>
+</html>
